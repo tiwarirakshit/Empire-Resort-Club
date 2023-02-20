@@ -328,7 +328,7 @@ body {
 # The Lineup Artists - Headliners
 ------------------------------------------------------------*/
 .content-section {
-    min-height: 4640px;
+    min-height: 1750px;
     width: 100%;
     padding-bottom: 120px;
     background: url("/images/middle-cover.jpg") no-repeat;
@@ -814,7 +814,7 @@ body {
 .site-footer {
     position: relative;
     padding: 40px 0 30px;
-    background: url(/images/footer-cover.jpg) no-repeat;
+    background: url(/images/Holi\ .png) no-repeat;
     background-size: cover;
 }
 
