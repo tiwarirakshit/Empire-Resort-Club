@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Empire Club & Resort</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap 5 CDN Links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="/css/modal.css"> -->
+    <link rel="stylesheet" href="/css/swiper.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="header-bar">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-10 col-lg-4">
+              <h1 class="site-branding flex">
+                <a href="#">Empire Club & Resort</a>
+              </h1>
+            </div>
+            <div class="col-2 col-lg-8">
+              <nav class="site-navigation">
+                <div class="hamburger-menu d-lg-none">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="hero-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 offset-lg-2 col-lg-10">
+            <div class="entry-header">
+              <h2>Happy Holi !</h2>
+              <div class="entry-meta-date">06.02.2023</div>
+            </div>
+            <div
+              class="countdown flex flex-wrap justify-content-between"
+              data-date="2023/03/06"
+            >
+              <div class="countdown-holder">
+                <div class="dday"></div>
+                <label>Days</label>
+              </div>
+              <div class="countdown-holder">
+                <div class="dhour"></div>
+                <label>Hours</label>
+              </div>
+              <div class="countdown-holder">
+                <div class="dmin"></div>
+                <label>Minutes</label>
+              </div>
+              <div class="countdown-holder">
+                <div class="dsec"></div>
+                <label>Seconds</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="entry-footer">
+              <a
+                href="#"
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                >Buy Tickets</a
+              >
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1
+                      class="modal-title fs-5 text-dark"
+                      id="exampleModalLabel"
+                    >
+                      Booking
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form
+                      class="row g-3 needs-validation"
+                      action="/pay"
+                      method="POST"
+                      novalidate
+                    >
+                      <div class="col-md-6">
+                        <label
+                          for="validationCustom01"
+                          class="form-label text-dark"
+                          >Name</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="validationCustom01"
+                          name="name"
+                          required
+                        />
+                        <div class="valid-feedback">Looks good!</div>
+                      </div>
+                      <div class="col-md-6">
+                        <label
+                          for="validationCustom01"
+                          class="form-label text-dark"
+                          >Phone</label
+                        >
+                        <input
+                          type="mobile"
+                          class="form-control"
+                          id="validationCustom01"
+                          name="phone"
+                          required
+                        />
+                        <div class="valid-feedback">Looks good!</div>
+                      </div>
+                      <div class="col-md-6">
+                        <label
+                          for="validationCustom04"
+                          class="form-label text-dark"
+                          >entry</label
+                        >
+                        <select
+                          class="form-select"
+                          id="validationCustom04"
+                          name="entry"
+                          required
+                        >
+                          <option selected disabled value="">Choose...</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid entry.
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <label
+                          for="validationCustom04"
+                          class="form-label text-dark"
+                          >type</label
+                        >
+                        <select
+                          class="form-select"
+                          id="validationCustom04"
+                          name="type"
+                          required
+                        >
+                          <option selected disabled value="">Choose...</option>
+                          <option>male</option>
+                          <option>female</option>
+                          <option>couple</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid tyoe.
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button
+                          class="btn btn-primary"
+                          type="submit"
+                          value="submit"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="content-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="lineup-artists-headline">
+              <div class="entry-title">
+                <p>JUST THE BEST</p>
+                <h2>The Perks</h2>
+              </div>
+              <div class="lineup-artists">
+                <div class="lineup-artists-wrap flex flex-wrap">
+                  <figure class="featured-image">
+                    <a href="#">
+                      <img
+                        src="/images/chad-montano-MqT0asuoIcU-unsplash.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </figure>
+                  <div class="lineup-artists-description">
+                    <div class="lineup-artists-description-container">
+                      <div class="entry-title">Unlimited Food</div>
+                      <div class="entry-content">
+                        <p>
+                          We're Offering Unlimited food both Veg and Non-Veg.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="lineup-artists-wrap flex flex-wrap">
+                  <div class="lineup-artists-description">
+                    <figure class="featured-image d-md-none">
+                      <a href="#">
+                        <img src="/images/mathew-kane.jpg" alt="" />
+                      </a>
+                    </figure>
+                    <div class="lineup-artists-description-container">
+                      <div class="entry-title">
+                        Drinks(Soft Drinks, Hard Drinks)
+                      </div>
+                      <div class="entry-content">
+                        <p>Enter Data</p>
+                      </div>
+                    </div>
+                  </div>
+                  <figure class="featured-image d-none d-md-block">
+                    <a href="#">
+                      <img
+                        src="/images/drew-beamer-bTN-zKFy9uA-unsplash.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </figure>
+                </div>
+                <div class="lineup-artists-wrap flex flex-wrap">
+                  <figure class="featured-image">
+                    <a href="#">
+                      <img
+                        src="/images/pramod-tiwari-NI1XeL-fyLY-unsplash.jpg"
+                        alt=""
+                      />
+                    </a>
+                  </figure>
+                  <div class="lineup-artists-description">
+                    <div class="lineup-artists-description-container">
+                      <div class="entry-title">More Perks Like</div>
+                      <div class="entry-content">
+                        <p>
+                          <li>Color Rain</li>
+                          <li>Live DJ</li>
+                          <li>Herbal Gulal</li>
+                          <li>Water Pool</li>
+                          <li>Water Games</li>
+                          <li>Kids Zone</li>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="#Buy-Tickets-Modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form
+              class="row g-3 needs-validation"
+              action="/contactUser"
+              method="POST"
+              noValidation
+            >
+              <input type="hidden" name="_csrf" value="{{ csrfToken }}" />
+              <div class="col-md-6 position-relative">
+                <label for="validationTooltip01" class="form-label">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  id="validationTooltip01"
+                  required
+                />
+                <div class="valid-tooltip">Looks good!</div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <label for="validationTooltip02" class="form-label"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="validationTooltip02"
+                  name="email"
+                  required
+                />
+                <div class="valid-tooltip">Looks good!</div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <label for="validationTooltip03" class="form-label"
+                  >Mobile</label
+                >
+                <input
+                  type="phone"
+                  name="mobile"
+                  class="form-control"
+                  id="validationTooltip03"
+                  required
+                />
+                <div class="invalid-tooltip">
+                  Please provide a valid phone number.
+                </div>
+              </div>
+              <div class="col-md-6 position-relative">
+                <label for="validationTooltip04" class="form-label"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  name="subject"
+                  class="form-control"
+                  id="validationTooltip04"
+                  required
+                />
+                <div class="invalid-tooltip">Please select a valid state.</div>
+              </div>
+
+              <div class="col-md-12 position-relative">
+                <label for="validationTextarea" class="form-label"
+                  >Message</label
+                >
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="validationTextarea"
+                  required
+                ></textarea>
+                <div class="invalid-feedback">Please enter a message.</div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Close
+                </button>
+                <button type="submit" class="btn btn-primary">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="site-footer">
+      <div
+        class="footer-cover-title flex justify-content-center align-items-center"
+      >
+        <h2>SUNFEST</h2>
+      </div>
+      <div class="footer-content-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="entry-title">
+                <a href="#">Empire Club & Resort</a>
+              </div>
+              <div class="entry-mail">
+                <a href="mailto:empirejabalpur2023@gmail.com"
+                  ><span>empirejabalpur2023@gmail.com</span></a
+                >
+              </div>
+              <div class="copyright-info">
+                Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                All rights reserved | This template is made with
+                <i class="fa fa-heart" aria-hidden="true"></i> by
+                <a href="https://www.innogative.in" target="_blank"
+                  >Innogative</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.collapsible.min.js"></script>
+    <script type="text/javascript" src="/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.countdown.min.js"></script>
+    <script type="text/javascript" src="/js/circle-progress.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.countTo.min.js"></script>
+    <script type="text/javascript" src="/js/custom.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-23581568-13");
+    </script>
+  </body>
+</html>
