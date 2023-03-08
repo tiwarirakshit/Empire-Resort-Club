@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="/style.css">
     <script nonce="e5bb77ca-54cd-4007-a2bc-1d82d6f27e23">(function (w, d) { !function (f, g, h, i) { f[h] = f[h] || {}; f[h].executed = []; f.zaraz = { deferred: [], listeners: [] }; f.zaraz.q = []; f.zaraz._f = function (j) { return function () { var k = Array.prototype.slice.call(arguments); f.zaraz.q.push({ m: j, a: k }) } }; for (const l of ["track", "set", "debug"]) f.zaraz[l] = f.zaraz._f(l); f.zaraz.init = () => { var m = g.getElementsByTagName(i)[0], n = g.createElement(i), o = g.getElementsByTagName("title")[0]; o && (f[h].t = g.getElementsByTagName("title")[0].text); f[h].x = Math.random(); f[h].w = f.screen.width; f[h].h = f.screen.height; f[h].j = f.innerHeight; f[h].e = f.innerWidth; f[h].l = f.location.href; f[h].r = g.referrer; f[h].k = f.screen.colorDepth; f[h].n = g.characterSet; f[h].o = (new Date).getTimezoneOffset(); if (f.dataLayer) for (const s of Object.entries(Object.entries(dataLayer).reduce(((t, u) => ({ ...t[1], ...u[1] }))))) zaraz.set(s[0], s[1], { scope: "page" }); f[h].q = []; for (; f.zaraz.q.length;) { const v = f.zaraz.q.shift(); f[h].q.push(v) } n.defer = !0; for (const w of [localStorage, sessionStorage]) Object.keys(w || {}).filter((y => y.startsWith("_zaraz_"))).forEach((x => { try { f[h]["z_" + x.slice(7)] = JSON.parse(w.getItem(x)) } catch { f[h]["z_" + x.slice(7)] = w.getItem(x) } })); n.referrerPolicy = "origin"; n.src = "/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(f[h]))); m.parentNode.insertBefore(n, m) };["complete", "interactive"].includes(g.readyState) ? zaraz.init() : f.addEventListener("DOMContentLoaded", zaraz.init) }(w, d, "zarazData", "script"); })(window, document);
     </script>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="/images/favicon-32x32.png" />
 </head>
 
 <body>
@@ -29,26 +31,8 @@
                 <div class="row align-items-center">
                     <div class="col-10 col-lg-4">
                         <h1 class="site-branding flex">
-                            <a href="#">Empire Club & Resort</a>
+                            <a href="#" id="color-heading">Empire Club & Resort</a>
                         </h1>
-                    </div>
-                    <div class="col-2 col-lg-8">
-                        <nav class="site-navigation">
-                            <div class="hamburger-menu d-lg-none">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                            <!-- <ul>
-                                <li><a href="#">HOME</a></li>
-                                <li><a href="#">SUNFEST 2018</a></li>
-                                <li><a href="#">ARTISTS</a></li>
-                                <li><a href="#">BLOG</a></li>
-                                <li><a href="#">CONTACT</a></li>
-                                <li><a href="#"><i class="fas fa-search"></i></a></li>
-                            </ul> -->
-                        </nav>
                     </div>
                 </div>
             </div>
@@ -61,25 +45,7 @@
                     <div class="entry-header">
                         <h2>Happy Holi!</h2>
                         <div class="entry-meta-date">
-                            06.02.2023
-                        </div>
-                    </div>
-                    <div class="countdown flex flex-wrap justify-content-between" data-date="2023/03/06">
-                        <div class="countdown-holder">
-                            <div class="dday"></div>
-                            <label>Days</label>
-                        </div>
-                        <div class="countdown-holder">
-                            <div class="dhour"></div>
-                            <label>Hours</label>
-                        </div>
-                        <div class="countdown-holder">
-                            <div class="dmin"></div>
-                            <label>Minutes</label>
-                        </div>
-                        <div class="countdown-holder">
-                            <div class="dsec"></div>
-                            <label>Seconds</label>
+                            07.02.2023 From 05:00 PM
                         </div>
                     </div>
                 </div>
@@ -87,9 +53,46 @@
             <div class="row">
                 <div class="col-12 ">
                     <div class="entry-footer">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#Buy-Tickets-Modal" class="btn">Buy
-                            Tickets</a>
-                        <!-- <a href="#" class="btn current">See Lineup</a> -->
+                        <div class="btn">
+                            <h1 id="heading-price">
+                                Special Price - ₹999 (50% Discount)
+                            </h1>
+                            <form>
+                                <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                    data-payment_button_id="pl_LJPi6jdu5pPPk4" async> </script>
+                            </form>
+                        </div>
+                        <div class="btn">
+                            <h1 id="heading-price">
+                                Special Entry Price - ₹449 (Grab Your Entry Passes)
+                            </h1>
+                            <form>
+                                <script src="https://checkout.razorpay.com/v1/payment-button.js"
+                                    data-payment_button_id="pl_LJPitGQMkhrn5u" async> </script>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 offset-lg-2 col-lg-10">
+                    <div class="countdown flex flex-wrap justify-content-between" data-date="2023/03/07">
+                        <div class="countdown-holder">
+                            <div class="dday color-black"></div>
+                            <label class="color-black">Days</label>
+                        </div>
+                        <div class="countdown-holder">
+                            <div class="dhour color-black"></div>
+                            <label class="color-black">Hours</label>
+                        </div>
+                        <div class="countdown-holder">
+                            <div class="dmin color-black"></div>
+                            <label class="color-black">Minutes</label>
+                        </div>
+                        <div class="countdown-holder">
+                            <div class="dsec color-black"></div>
+                            <label class="color-black">Seconds</label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,15 +129,16 @@
                             <div class="lineup-artists-wrap flex flex-wrap">
                                 <div class="lineup-artists-description">
                                     <figure class="featured-image d-md-none">
-                                        <a href="#"> <img src="/images/mathew-kane.jpg" alt=""> </a>
+                                        <a href="#"> <img src="/images/drew-beamer-bTN-zKFy9uA-unsplash.jpg" alt="">
+                                        </a>
                                     </figure>
                                     <div class="lineup-artists-description-container">
                                         <div class="entry-title">
-                                            Drinks(Soft Drinks, Hard Drinks)
+                                            Drinks(Alcohol)
                                         </div>
-                                        <div class="entry-content">
+                                        <!-- <div class="entry-content">
                                             <p>Enter Data</p>
-                                        </div>
+                                        </div> -->
                                         <!-- <div class="box-link">
                                             <a href="#"><img src="/images/box.jpg" alt=""></a>
                                         </div> -->
@@ -157,7 +161,7 @@
                                             <p>
                                                 <li>Color Rain</li>
                                                 <li>Live DJ</li>
-                                                <li>Herbal Gulal</li>
+                                                <li>Herbal Gulaal</li>
                                                 <li>Water Pool</li>
                                                 <li>Water Games</li>
                                                 <li>Kids Zone</li>
@@ -171,63 +175,6 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal -->
-    <div class="modal fade" id="#Buy-Tickets-Modal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Contact us</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form class="row g-3 needs-validation" action="/contactUser" method="POST" noValidation>
-                        <input type="hidden" name="_csrf" value="{{csrfToken}}">
-                        <div class="col-md-6 position-relative">
-                            <label for="validationTooltip01" class="form-label">Name</label>
-                            <input type="text" name="name" class="form-control" id="validationTooltip01" required>
-                            <div class="valid-tooltip">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-6 position-relative">
-                            <label for="validationTooltip02" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="validationTooltip02" name="email" required>
-                            <div class="valid-tooltip">
-                                Looks good!
-                            </div>
-                        </div>
-                        <div class="col-md-6 position-relative">
-                            <label for="validationTooltip03" class="form-label">Mobile</label>
-                            <input type="phone" name="mobile" class="form-control" id="validationTooltip03" required>
-                            <div class="invalid-tooltip">
-                                Please provide a valid phone number.
-                            </div>
-                        </div>
-                        <div class="col-md-6 position-relative">
-                            <label for="validationTooltip04" class="form-label">Subject</label>
-                            <input type="text" name="subject" class="form-control" id="validationTooltip04" required>
-                            <div class="invalid-tooltip">
-                                Please select a valid state.
-                            </div>
-                        </div>
-
-                        <div class="col-md-12 position-relative">
-                            <label for="validationTextarea" class="form-label">Message</label>
-                            <textarea class="form-control" name="message" id="validationTextarea" required></textarea>
-                            <div class="invalid-feedback">
-                                Please enter a message.
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="submit" class="btn btn-primary">Send</button>
-                        </div>
-                    </form>
                 </div>
             </div>
         </div>
@@ -251,9 +198,7 @@
                             Copyright &copy;
                             <script data-cfasync="false"
                                 src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
-                            template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a
-                                href="https://www.innogative.in" target="_blank">Innogative</a>
+                            <script>document.write(new Date().getFullYear());</script> All Rights Reserved
 
                         </div>
                         <!-- <div class="footer-social">

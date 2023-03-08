@@ -232,7 +232,7 @@ body {
 -----------------------------------------------------------*/
 .hero-content {
     padding: 220px 0;
-    background: url("/images/cover.jpg") no-repeat;
+    background: url("/images/wallpaperflare.com_wallpaper.jpg") no-repeat;
     background-size: cover;
 }
 
@@ -311,7 +311,7 @@ body {
 }
 
 .hero-content .entry-footer .btn {
-    background: hsl(0, 0%, 100%);
+    background: transparent;
     padding: 16px 40px;
     border-radius: 0;
     margin-right: 20px;
@@ -1947,10 +1947,11 @@ body {
     content: "03.";
 }
 
+#color-heading{
+    color: black;
+}
 
-
-
-
-
-
+.color-black{
+    color: black !important;
+}
 
